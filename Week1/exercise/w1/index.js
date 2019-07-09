@@ -10,7 +10,14 @@ console.log('Hack your future Belgium!');
 // 1b: inside this function: select the header element and assign that to a variable called "header"
 
 // 1c: change the inner html of the header element to your name
+    function changeHeader() {
+    console.log("test");
+    let header = document.getElementsByTagName('h1')[0];
+    header.innerHTML = "Jamal";
+     }
+       let headerToChange = document.getElementById("btn-changeHeader")
 
+         headerToChange.addEventListener("click", changeHeader);
 
 // ====================================== //
 
@@ -28,6 +35,15 @@ console.log('Hack your future Belgium!');
 // 2d: select the image element and assign to a variable called "imageToChange"
 
 // 2e: to change the image: assign the imageInputValue to the image src
+
+   function changeImage() {
+    console.log("test");
+    let imageInputValue = document.getElementById("imageInput").value;
+    let imageToChange = document.getElementById("imageToChange")
+    imageToChange.src = imageInputValue;
+}
+    
+document.getElementById("btn-changeImage").addEventListener("click", changeImage)
 
 
 // ====================================== //
