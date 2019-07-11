@@ -64,3 +64,5 @@ document.getElementById("btn-changeImage").addEventListener("click", changeImage
 // 3f: set created <li> element innerHtml to todoInput value
 
 // 3g: add <li> element to todoList
+
+
