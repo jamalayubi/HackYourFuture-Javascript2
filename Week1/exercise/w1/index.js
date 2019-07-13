@@ -1,5 +1,7 @@
 console.log('Hack your future Belgium!');
 
+
+
 // EXERCISE 1
 
 // 1a: create a function called "changeHeader", put a console.log() inside this function to test
@@ -10,14 +12,17 @@ console.log('Hack your future Belgium!');
 // 1b: inside this function: select the header element and assign that to a variable called "header"
 
 // 1c: change the inner html of the header element to your name
-    function changeHeader() {
+
+
+function changeHeader() {
     console.log("test");
     let header = document.getElementsByTagName('h1')[0];
     header.innerHTML = "Jamal";
-     }
-       let headerToChange = document.getElementById("btn-changeHeader")
+}
+let headerToChange = document.getElementById("btn-changeHeader")
 
-         headerToChange.addEventListener("click", changeHeader);
+headerToChange.addEventListener("click", changeHeader);
+
 
 // ====================================== //
 
@@ -36,7 +41,7 @@ console.log('Hack your future Belgium!');
 
 // 2e: to change the image: assign the imageInputValue to the image src
 
-   function changeImage() {
+function changeImage() {
     console.log("test");
     let imageInputValue = document.getElementById("imageInput").value;
     let imageToChange = document.getElementById("imageToChange")
@@ -64,7 +69,6 @@ document.getElementById("btn-changeImage").addEventListener("click", changeImage
 // 3f: set created <li> element innerHtml to todoInput value
 
 // 3g: add <li> element to todoList
-
 function addTodo(){
     const input_value = document.getElementById("todoInput").value,
           new_li_element = document.createElement("LI"),
