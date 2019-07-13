@@ -65,4 +65,14 @@ document.getElementById("btn-changeImage").addEventListener("click", changeImage
 
 // 3g: add <li> element to todoList
 
+function addTodo(){
+    const input_value = document.getElementById("todoInput").value,
+          new_li_element = document.createElement("LI"),
+          new_todo = document.createTextNode(input_value);
+     
+    new_li_element.appendChild(new_todo);
+    document.getElementById("todoList").appendChild(new_li_element);
+}
 
+const todoButton = document.getElementById("btn-addTodo");
+todoButton.addEventListener("click",addTodo);
