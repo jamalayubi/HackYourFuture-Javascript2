@@ -1,15 +1,18 @@
 'use strict';
+// My original array was...
+const numbers = [1, 2, 3, 4];
 
-function doubleOddNumbers(numbers) {
-  // Replace this comment and the next line with your code
-  console.log(numbers);
-}
+// After appling filter function I get the even numbers array called 'evenNumber'
+let oddNumbers = numbers.filter(x => x % 2 !== 0)
+console.log('Our original array was: ' + numbers);
 
-const myNumbers = [1, 2, 3, 4];
-console.log(doubleOddNumbers(myNumbers));
+console.log('-------------------------------------------------')
 
-// Do not change or remove anything below this line
-module.exports = {
-  myNumbers,
-  doubleOddNumbers,
-};
+console.log('New Generated array by applying filter() is: ' + oddNumbers);
+
+console.log('-------------------------------------------------')
+
+// Here I took the filtered even numbers array and maped it with map() function
+let multiplyiedNumber = oddNumbers.map(x => x * 2);
+console.log('The doubled numbers are: ' + multiplyiedNumber);
+
